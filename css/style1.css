@@ -52,14 +52,14 @@ h2 {
 }
 
 #pslo {
-  background-color: #d5d6d2;
+  background-color: #ffde7a;
   font-family: "Marcellus", serif;
 }
 
 /* Begin tools */
 
 .tool-container {
-  background-color: #ffde7a;
+  background-color: #d5d6d2;
   content: "";
   display: inline-block;
   clear: both;
