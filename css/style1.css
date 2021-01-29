@@ -67,6 +67,14 @@ h2 {
 
 #cloud-tools {
   font-family: "Dancing Script", cursive;
+  justify-content: left;
+  align-content: left;
+}
+
+#local-tools {
+ font-family: "Dancing Script", cursive;
+ justify-content: right;
+ align-content:right;
 }
 
 #ide {
