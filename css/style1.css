@@ -57,22 +57,28 @@ h2 {
 }
 
 /* Begin tools */
-#tools {
-  background-color: #d2d6d5;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+.tool-container {
+  background-color: #ffde7a;
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+
+.container-half {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
 }
 
 #cloud-tools {
-  font-family: "Dancing Script", cursive;
-  justify-content: left;
-  align-content: left;
+  font-family: "Marcellus", serif
 }
 
 #local-tools {
- font-family: "Dancing Script", cursive;
- justify-content: right;
- align-content:right;
+  font-family: "Marcellus", serif
 }
 
 #ide {
