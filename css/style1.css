@@ -61,8 +61,6 @@ h2 {
   background-color: #d2d6d5;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
 }
 
 #cloud-tools {
