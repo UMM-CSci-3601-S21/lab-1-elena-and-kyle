@@ -129,13 +129,7 @@ body {
   font-family: "Courier New", monospace
 }
 
-.ide {
-  list-style-image: url('https://raw.githubusercontent.com/UMM-CSci-3601-S21/lab-1-elena-and-kyle/main/assets/images/Terminal.png');
-  margin-left: -20px;
-  margin-right: 10px;
-}
-
-.version-control, .testing {
+.version-control, .ide, .testing {
   list-style: none;
   margin-left: -20px;
   margin-right: 10px;
@@ -145,8 +139,12 @@ body {
   content: '\1F3AE';
 }
 
+.ide:before {
+  content: '\1F4BB';
+}
+
 .testing:before {
-	content: '\1F4BB';
+	content: '\1F9EA';
 }
 
 /* End tools */
