@@ -129,14 +129,16 @@ body {
   font-family: "Courier New", monospace
 }
 
-.ide, .version-control {
-  list-style: none;
+.ide {
+  list-style-image: url('https://raw.githubusercontent.com/UMM-CSci-3601-S21/lab-1-elena-and-kyle/main/assets/images/Terminal.png');
   margin-left: -20px;
   margin-right: 10px;
 }
 
-.ide {
-  list-style-image: url('https://raw.githubusercontent.com/UMM-CSci-3601-S21/lab-1-elena-and-kyle/main/assets/images/Terminal.png');
+.version-control, .testing {
+  list-style: none;
+  margin-left: -20px;
+  margin-right: 10px;
 }
 
 .version-control:before {
