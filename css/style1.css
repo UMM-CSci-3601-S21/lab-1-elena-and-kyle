@@ -74,14 +74,23 @@ h2 {
 }
 
 #cloud-tools {
-  font-family: "Marcellus", serif
+  font-family: "Roboto", sans-serif
 }
 
 #local-tools {
   font-family: "Marcellus", serif
 }
 
-#ide {
+.ide {
+  font-variant: initial;
+}
+
+.version-control {
+  font-variant: inherit;
+}
+
+.testing {
+  font-variant: unset;
 }
 /* End tools */
 
