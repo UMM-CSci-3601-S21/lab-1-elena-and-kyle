@@ -82,11 +82,15 @@ h2 {
 }
 
 .ide {
-  color: pink;
+  color: maroon;
 }
 
 .version-control {
-  color: #fff70f
+  color: navy;
+}
+
+.testing {
+  color: forestgreen;
 }
 /* End tools */
 
