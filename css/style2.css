@@ -106,3 +106,13 @@ body {
   flex-direction: row;
 }
 
+img.pic {
+  border-radius: 50%;
+  width: 100%;
+}
+
+#validation {
+  font-size: 0.8rem;
+  background-color: #d5d6d2;
+  padding: 25px;
+}
