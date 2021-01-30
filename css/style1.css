@@ -82,15 +82,11 @@ h2 {
 }
 
 .ide {
-  font-variant: initial;
+  color: pink;
 }
 
 .version-control {
-  font-variant: inherit;
-}
-
-.testing {
-  font-variant: unset;
+  color: #fff70f
 }
 /* End tools */
 
