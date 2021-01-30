@@ -81,3 +81,28 @@ body {
 #style-selector li a:hover {
   background-color: grey;
 }
+
+.section {
+  width: device-width;
+  padding: 40px 0 40px 70px;
+}
+
+.pslo-courses-container {
+  padding-top: 50px;
+}
+
+#pslo {
+  background-color: pink;
+  font-family: "Marcellus", serif;
+  width: 100%;
+  left: 0;
+  padding-inline-start: 70px;
+}
+
+#courses {
+  background-color: white;
+  font-family: "Marcellus", serif;
+  display: flex;
+  flex-direction: row;
+}
+
