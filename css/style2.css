@@ -106,6 +106,45 @@ body {
   flex-direction: row;
 }
 
+/* Begin tools */
+
+.tool-container {
+  background-color: #d5d6d2;
+  display: inline-block;
+}
+
+.container-half {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+#cloud-tools {
+  font-family: "Brush Script MT", cursive
+}
+
+#local-tools {
+  font-family: "Courier New", monospace
+}
+
+.ide, .version-control, .testing {
+  list-style: none;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.version-control:before {
+  content: '\1F3AE';
+}
+
+.testing:before {
+	content: '\1F4BB';
+}
+
+/* End tools */
+
 #faculty {
   background-color: #f9f7f6;
   display: flex;
