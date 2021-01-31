@@ -9,9 +9,7 @@ use float to make something locate itself on the right or left
 body {
   display: flex; /* this is the flexbox model. It adds responsive design to its items */
   flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
-  align-items: left; /* These next two properties center the flex items */
-  justify-content: left;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 /*
@@ -46,68 +44,27 @@ body {
   float: left;
 }
 
-#style-selector {
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  right: 0px;
-  padding: 10px 30px;
-  background: #c23b22;
-  overflow-x: hidden;
-}
-
-#style-selector ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #c23b22;
-}
-
-#style-selector {
-  float: right;
-}
-#style-selector li{
-  display: inline-block;
-}
-
-#style-selector li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px 30px;
-  text-decoration: none;
-}
-
-#style-selector li a:hover {
-  background-color: #ff6961;
-}
-
 .section {
   width: device-width;
   padding: 60px 0 60px 100px;
-}
-
-.pslo-courses-container {
-  padding-top: 50px;
+  padding-right: 60px;
 }
 
 #pslo > h2 {
   font-family: "proxima-nova",Helvetica;
   font-size: 2.5rem;
   color: #ffea61;
-  padding-right: 600px;
 }
 
 #pslo li {
-  padding-inline-end: 600px;
   font-size: large;
+  text-align: left;
 }
+
 #pslo {
   background-color: #c23b22;
   font-family: "Marcellus", serif;
   width: device-width;
-  left: 0;
   color: #f4f1d6;
 }
 
@@ -115,18 +72,9 @@ body {
   font-family: "proxima-nova",Helvetica;
   font-size: 3rem;
   color: #999999;
-  margin-left: 600px;
-}
-
-.major-element {
-  margin-left: 600px;
-  padding-inline-end: 150px;
-  font-size: large;
-  color: #aaaaaa;
 }
 
 #courses {
-  float: right;
   background-color: white;
   font-family: "Marcellus", serif;
   display: flex;
@@ -176,7 +124,7 @@ body {
 
 /* End tools */
 
-#faculty {
+faculty {
   background-color: #f9f7f6;
   display: flex;
   flex-direction: column;
@@ -220,6 +168,43 @@ body {
 img.pic {
   border-radius: 50%;
   width: 100%;
+}
+
+#style-selector {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  padding: 10px 30px;
+  background: #c23b22;
+  overflow-x: hidden;
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c23b22;
+}
+
+#style-selector {
+  float: right;
+}
+#style-selector li{
+  display: inline-block;
+}
+
+#style-selector li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+}
+
+#style-selector li a:hover {
+  background-color: #ff6961;
 }
 
 #validation {
