@@ -52,7 +52,7 @@ body {
   top: 0px;
   right: 0px;
   padding: 10px 30px;
-  background: pink;
+  background: #c23b22;
   overflow-x: hidden;
 }
 
@@ -61,7 +61,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: pink;
+  background-color: #c23b22;
 }
 
 #style-selector {
@@ -80,7 +80,7 @@ body {
 }
 
 #style-selector li a:hover {
-  background-color: grey;
+  background-color: #ff6961;
 }
 
 .section {
@@ -93,7 +93,7 @@ body {
 }
 
 #pslo {
-  background-color: pink;
+  background-color: #c23b22;
   font-family: "Marcellus", serif;
   width: device-width;
   left: 0;
@@ -110,7 +110,7 @@ body {
 /* Begin tools */
 
 .tool-container {
-  background-color: #d5d6d2;
+  background-color: #ffd400;
   display: inline-block;
 }
 
@@ -198,6 +198,6 @@ img.pic {
 
 #validation {
   font-size: 0.8rem;
-  background-color: pink;
+  background-color: #c23b22;
   padding: 25px;
 }
