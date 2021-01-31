@@ -35,12 +35,12 @@ body {
   top: 0px;
   left:0px;
   z-index: 1;
-  background: pink;
+  background: #c23b22;
   overflow: hidden;
   font-family: "Patua One", monospace;
   text-align: left;
   font-size: 2rem;
-  color: white;
+  color: #ffea61;
   padding: 16px 0px 16px 70px;
   text-decoration: none;
   float: left;
