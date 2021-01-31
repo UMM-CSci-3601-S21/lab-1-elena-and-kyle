@@ -129,7 +129,7 @@ body {
   font-family: "Courier New", monospace
 }
 
-.ide, .version-control, .testing {
+.version-control, .ide, .testing {
   list-style: none;
   margin-left: -20px;
   margin-right: 10px;
@@ -139,8 +139,12 @@ body {
   content: '\1F3AE';
 }
 
+.ide:before {
+  content: '\1F4BB';
+}
+
 .testing:before {
-	content: '\1F4BB';
+	content: '\1F9EA';
 }
 
 /* End tools */
