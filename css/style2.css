@@ -41,7 +41,7 @@ body {
   text-align: left;
   font-size: 2rem;
   color: #ffea61;
-  padding: 16px 0px 16px 70px;
+  padding: 16px 0px 16px 100px;
   text-decoration: none;
   float: left;
 }
@@ -85,19 +85,30 @@ body {
 
 .section {
   width: device-width;
-  padding: 40px 0 40px 70px;
+  padding: 60px 0 60px 100px;
 }
 
 .pslo-courses-container {
   padding-top: 50px;
 }
 
+#pslo > h2 {
+  font-family: "proxima-nova",Helvetica;
+  font-size: 2.5rem;
+  color: #ffea61;
+  padding-right: 600px;
+}
+
+#pslo li {
+  padding-inline-end: 500px;
+  font-size: large;
+}
 #pslo {
   background-color: #c23b22;
   font-family: "Marcellus", serif;
   width: device-width;
   left: 0;
-  padding-inline-start: 70px;
+  color: #f4f1d6;
 }
 
 #courses {
