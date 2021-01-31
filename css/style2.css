@@ -27,6 +27,7 @@ body {
 
 #main-title {
   display: flex;
+  visibility: hidden;
   width: 100%;
   position: fixed;
   margin: 0;
@@ -69,7 +70,7 @@ body {
 }
 
 #courses > h2 {
-  font-family: "proxima-nova",Helvetica;
+  font-family: "proxima-nova", Helvetica;
   font-size: 3rem;
   color: #999999;
 }
@@ -169,7 +170,13 @@ img.pic {
   border-radius: 50%;
   width: 100%;
 }
-
+#style-selector:before {
+	content: "UMM Computer Science";
+	color: yellow;
+	font-size: 2rem;
+	font-family: Patua One, monospace;
+	text-align: center;
+}
 #style-selector {
   position: fixed;
   z-index: 1;
