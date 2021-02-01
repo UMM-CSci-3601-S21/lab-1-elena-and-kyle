@@ -192,7 +192,7 @@ img.pic {
 #style-selector:before { /* down the page with it.*/
   content: "UMM Computer Science";
   color: yellow;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: Patua One, monospace;
   text-align: center;
 }
