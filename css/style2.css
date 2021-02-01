@@ -58,10 +58,7 @@ h2 {
   background-color: #c23b22;
   width: device-width;
   color: #f4f1d6;
-<<<<<<< HEAD
   padding-bottom: 20px;
-=======
->>>>>>> main
 }
 
 #pslo > h2 {
@@ -82,10 +79,7 @@ h2 {
 
 #courses {
   background-color: white;
-<<<<<<< HEAD
   color: #333333;
-=======
->>>>>>> main
   display: flex;
   flex-direction: column;
 }
@@ -127,16 +121,15 @@ a:link {
   font-family: "Courier New", monospace;
 }
 
-.version-control, .ide, .testing {
-  list-style: none;
-  margin-left: -20px;
-  margin-right: 10px;
-}
-
+.version-control, .ide, .testing { /*Grouping: The different software classes*/
+  list-style: none;                /*are having their list styles set to none.*/
+  margin-left: -20px; /*Rule 2: This rule moves back the bullets*/
+}                     /*of each software class to make room for
+                        the emoticons/emojis to take their place.*/
 .version-control:before {
-  content: '\1F3AE';
-}
-
+  content: '\1F3AE'; /*Rule 3: In this instance, this rule is used*/
+}                    /*to hold a controller emoji to be inserted behind
+                      all of the version-control tools.*/
 .ide:before {
   content: '\1F4BB';
 }
