@@ -58,7 +58,10 @@ h2 {
   background-color: #c23b22;
   width: device-width;
   color: #f4f1d6;
+<<<<<<< HEAD
   padding-bottom: 20px;
+=======
+>>>>>>> main
 }
 
 #pslo > h2 {
@@ -79,7 +82,10 @@ h2 {
 
 #courses {
   background-color: white;
+<<<<<<< HEAD
   color: #333333;
+=======
+>>>>>>> main
   display: flex;
   flex-direction: column;
 }
