@@ -58,6 +58,7 @@ h2 {
   background-color: #c23b22;
   width: device-width;
   color: #f4f1d6;
+  padding-bottom: 20px;
 }
 
 #pslo > h2 {
@@ -78,6 +79,7 @@ h2 {
 
 #courses {
   background-color: white;
+  color: #333333;
   display: flex;
   flex-direction: column;
 }
@@ -89,12 +91,26 @@ h2 {
   display: inline-block;
 }
 
+.tool-container > h2 {
+  font-size: 3rem;
+  color: #800000;
+}
+
 .division {
   float: left;
   width: 33.33%;
   padding: 10px;
   justify-content: center;
   align-content: center;
+}
+
+.division > h3 {
+  font-size: 2rem;
+  color: #a64330;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 #cloud-tools {
