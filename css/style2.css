@@ -27,14 +27,12 @@ body {
 
 #main-title {
   display: flex;
-  visibility: hidden;
+  visibility: hidden; /*Rule 1: This makes the header invisible */
   width: 100%;
   position: fixed;
   margin: 0;
   top: 0px;
   left:0px;
-  z-index: 1;
-  background: #c23b22;
   overflow: hidden;
   color: #ffea61;
   padding: 16px 0px 16px 100px;
