@@ -36,12 +36,8 @@ body {
   z-index: 1;
   background: #c23b22;
   overflow: hidden;
-  font-family: "Patua One", monospace;
-  text-align: left;
-  font-size: 2rem;
   color: #ffea61;
   padding: 16px 0px 16px 100px;
-  text-decoration: none;
   float: left;
 }
 
@@ -52,8 +48,9 @@ body {
 }
 
 #pslo > h2 {
-  font-family: "proxima-nova",Helvetica;
-  font-size: 2.5rem;
+  padding-top: 40px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 3rem;
   color: #ffea61;
 }
 
@@ -70,7 +67,7 @@ body {
 }
 
 #courses > h2 {
-  font-family: "proxima-nova", Helvetica;
+  font-family: "proxima-nova", sans-serif;
   font-size: 3rem;
   color: #999999;
 }
@@ -98,11 +95,11 @@ body {
 }
 
 #cloud-tools {
-  font-family: "Brush Script MT", cursive
+  font-family: "Brush Script MT", cursive;
 }
 
 #local-tools {
-  font-family: "Courier New", monospace
+  font-family: "Courier New", monospace;
 }
 
 .version-control, .ide, .testing {
@@ -125,7 +122,7 @@ body {
 
 /* End tools */
 
-faculty {
+#faculty {
   background-color: #f9f7f6;
   display: flex;
   flex-direction: column;
@@ -133,10 +130,15 @@ faculty {
   align-content: center;
 }
 
+#faculty > h2 {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 3rem;
+}
+
 #faculty > ul > li {
   display: inline-block;
   font-family: sans-serif;
-  padding: 20px;
+  padding: 10px;
 }
 
 #faculty-list {
@@ -154,14 +156,14 @@ faculty {
 .name {
   position: relative;
   bottom: -20px;
-  left: 70px;
+  left: 50px;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
 
 .office {
   position: relative;
-  bottom: -245px;
+  bottom: -220px;
   left: 50px;
   font-family: "Marcellus", serif;
 }
@@ -170,6 +172,7 @@ img.pic {
   border-radius: 50%;
   width: 100%;
 }
+
 #style-selector:before {
 	content: "UMM Computer Science";
 	color: yellow;
@@ -177,12 +180,14 @@ img.pic {
 	font-family: Patua One, monospace;
 	text-align: center;
 }
+
 #style-selector {
+  float: left;
   position: fixed;
   z-index: 1;
   top: 0px;
-  right: 0px;
-  padding: 10px 30px;
+  left: 0px;
+  padding: 0px 30px;
   background: #c23b22;
   overflow-x: hidden;
 }
@@ -195,46 +200,6 @@ img.pic {
   background-color: #c23b22;
 }
 
-#style-selector {
-  float: right;
-}
-#style-selector li{
-  display: inline-block;
-}
-
-#style-selector li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px 30px;
-  text-decoration: none;
-}
-
-#style-selector li a:hover {
-  background-color: #ff6961;
-}
-
-#style-selector {
-  position: fixed;
-  z-index: 1;
-  top: 0px;
-  right: 0px;
-  padding: 10px 30px;
-  background: #c23b22;
-  overflow-x: hidden;
-}
-
-#style-selector ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #c23b22;
-}
-
-#style-selector {
-  float: right;
-}
 #style-selector li{
   display: inline-block;
 }
@@ -252,7 +217,15 @@ img.pic {
 }
 
 #validation {
+  padding-left: 100px;
+  font-family: "Marcellus", serif;
   font-size: 0.8rem;
+  color: #f5f5f5;
   background-color: #c23b22;
-  padding: 25px;
+}
+
+#validation > div > h2 {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 2rem;
+  color: #f5f5f5;
 }
