@@ -178,25 +178,28 @@ a:link {
 
 .office {
   position: relative;
+  font-style: oblique; /* Rule 4: This sets the font-style of the office text to oblique.*/
 }
 
 img.pic {
   border-radius: 50%;
+  border-width: 5px;
+  border-style: ridge; /* Rule 5: This gives the faculty images a ridged border. */
   width: 100%;
 }
 
-#style-selector:before {
-	content: "UMM Computer Science";
-	color: yellow;
-	font-size: 2rem;
-	font-family: Patua One, monospace;
-	text-align: center;
+/* Here, "UMM Computer Science" is placed before the style selector so that it scrolls*/
+#style-selector:before { /* down the page with it.*/
+  content: "UMM Computer Science";
+  color: yellow;
+  font-size: 3rem;
+  font-family: Patua One, monospace;
+  text-align: center;
 }
 
 #style-selector {
   float: left;
   position: fixed;
-  z-index: 1;
   top: 0px;
   left: 0px;
   right: 0px;
