@@ -41,15 +41,18 @@ body {
   float: left;
 }
 
+h2 {
+  font-family: "proxima-nova", sans-serif;
+  padding-left: 10px;
+}
+
 .section {
   width: device-width;
-  padding: 60px 0 60px 100px;
-  padding-right: 60px;
+  padding: 60px 60 60px 100px;
 }
 
 #pslo > h2 {
-  padding-top: 40px;
-  font-family: "proxima-nova", sans-serif;
+  padding-top: 100px;
   font-size: 3rem;
   color: #ffea61;
 }
@@ -67,7 +70,6 @@ body {
 }
 
 #courses > h2 {
-  font-family: "proxima-nova", sans-serif;
   font-size: 3rem;
   color: #999999;
 }
@@ -131,14 +133,13 @@ body {
 }
 
 #faculty > h2 {
-  font-family: "proxima-nova", sans-serif;
   font-size: 3rem;
 }
 
 #faculty > ul > li {
   display: inline-block;
   font-family: sans-serif;
-  padding: 10px;
+  padding: 20px;
 }
 
 #faculty-list {
@@ -155,16 +156,12 @@ body {
 
 .name {
   position: relative;
-  bottom: -20px;
-  left: 50px;
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
 
 .office {
   position: relative;
-  bottom: -220px;
-  left: 50px;
   font-family: "Marcellus", serif;
 }
 
@@ -187,7 +184,8 @@ img.pic {
   z-index: 1;
   top: 0px;
   left: 0px;
-  padding: 0px 30px;
+  right: 0px;
+  padding: 10px 30px;
   background: #c23b22;
   overflow-x: hidden;
 }
@@ -217,7 +215,7 @@ img.pic {
 }
 
 #validation {
-  padding-left: 100px;
+  padding: 25px;
   font-family: "Marcellus", serif;
   font-size: 0.8rem;
   color: #f5f5f5;
@@ -225,7 +223,6 @@ img.pic {
 }
 
 #validation > div > h2 {
-  font-family: "proxima-nova", sans-serif;
   font-size: 2rem;
   color: #f5f5f5;
 }
