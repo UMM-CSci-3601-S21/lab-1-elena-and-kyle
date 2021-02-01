@@ -222,6 +222,8 @@ img.pic {
 
 #style-selector li a {
   display: block;
+  font-family: Verdana, sans-serif;
+  font-style: bold;
   color: white;
   text-align: center;
   padding: 16px 30px;
@@ -239,7 +241,7 @@ img.pic {
   background-color: #c23b22;
 }
 
-#validation > div > h2 {
-  font-size: 2rem;
+#validation > div > h2 { /* Nesting: The validation header's font */
+  font-size: 2rem;       /* is resized and set to light gray.*/
   color: #f5f5f5;
 }
