@@ -7,6 +7,241 @@ use float to make something locate itself on the right or left
 */
 
 body {
-  padding: 30px;
-  background-color: #ffffff;
+  display: flex; /* this is the flexbox model. It adds responsive design to its items */
+  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  margin: 0;
+}
+
+/*
+ * Use of media query to change the flex-direction of the #pslo and #courses
+ * elements when the width of the screen exceeds 925px to put
+ * them side-by-side.
+ */
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: flex;
+    flex-direction: column;
+    max-width: device-width;
+  }
+}
+
+#main-title {
+  display: flex;
+  visibility: hidden; /*Rule 1: This makes the header invisible */
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  top: 0px;
+  left:0px;
+  overflow: hidden;
+  color: #ffea61;
+  padding: 16px 0px 16px 100px;
+  float: left;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 10px;
+}
+
+.section {
+  width: device-width;
+  padding: 60px 60 100px 100px;
+}
+
+#pslo, #courses, .office, #validation /*Grouping: All of these items will*/
+{                                     /*have their fonts set.*/
+  font-family: "PT Sans", serif;
+}
+
+#pslo {
+  background-color: #c23b22;
+  width: device-width;
+  color: #f4f1d6;
+  padding-bottom: 20px;
+}
+
+#pslo > h2 {
+  padding-top: 100px;
+  font-size: 3rem;
+  color: #ffea61;
+}
+
+#pslo li {
+  font-size: large;
+  text-align: left;
+}
+
+#courses > h2 {
+  font-size: 3rem;
+  color: #999999;
+}
+
+#courses {
+  background-color: white;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Begin tools */
+
+.tool-container {
+  background-color: #ffd400;
+  display: inline-block;
+}
+
+.tool-container > h2 {
+  font-size: 3rem;
+  color: #800000;
+}
+
+.division {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.division > h3 {
+  font-size: 2rem;
+  color: #a64330;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#cloud-tools {
+  font-family: "Brush Script MT", cursive;
+}
+
+#local-tools {
+  font-family: "Courier New", monospace;
+}
+
+.version-control, .ide, .testing { /*Grouping: The different software classes*/
+  list-style: none;                /*are having their list styles set to none.*/
+  margin-left: -20px; /*Rule 2: This rule moves back the bullets*/
+}                     /*of each software class to make room for
+                        the emoticons/emojis to take their place.*/
+.version-control:before {
+  content: '\1F3AE'; /*Rule 3: In this instance, this rule is used*/
+}                    /*to hold a controller emoji to be inserted behind
+                      all of the version-control tools.*/
+.ide:before {
+  content: '\1F4BB';
+}
+
+.testing:before {
+	content: '\1F9EA';
+}
+
+/* End tools */
+
+#faculty {
+  background-color: #f9f7f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#faculty > h2 {
+  font-size: 3rem;
+}
+
+#faculty > ul > li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well until around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
+.name {
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+
+.office {
+  position: relative;
+  font-style: oblique; /* Rule 4: This sets the font-style of the office text to oblique.*/
+}
+
+img.pic {
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: ridge; /* Rule 5: This gives the faculty images a ridged border. */
+  width: 100%;
+}
+
+/* Here, "UMM Computer Science" is placed before the style selector so that it scrolls*/
+#style-selector:before { /* down the page with it.*/
+  content: "UMM Computer Science";
+  color: yellow;
+  font-size: 2rem;
+  font-family: Patua One, monospace;
+  text-align: center;
+}
+
+#style-selector {
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px 30px;
+  background: #c23b22;
+  overflow-x: hidden;
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c23b22;
+}
+
+#style-selector li{
+  display: inline-block;
+}
+
+#style-selector li a {
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-style: bold;
+  color: white;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+}
+
+#style-selector li a:hover {
+  background-color: #ff6961;
+}
+
+#validation {
+  padding: 25px;
+  font-size: 0.8rem;
+  color: #f5f5f5;
+  background-color: #c23b22;
+}
+
+#validation > div > h2 { /* Nesting: The validation header's font */
+  font-size: 2rem;       /* is resized and set to light gray.*/
+  color: #f5f5f5;
 }
